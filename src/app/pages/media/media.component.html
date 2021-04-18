@@ -1,0 +1,17 @@
+<p>Media</p>
+
+  
+  <div class="row">
+    <span *ngFor="let x of movies; let i = index"> 
+      <div class="clswidth" (click)="toggleDiv(this.id)">
+        <label>{{x.title}}</label>
+        <img src={{x.poster}} width="150px" height="130px" class="img-rounded"  #{{x.id}} >
+        <br/>
+        <button type="button" class="btn btn-primary btn-sm">View Details</button>
+      
+      </div>
+    </span>
+</div>
+
+
+  <!-- <router-outlet></router-outlet> -->

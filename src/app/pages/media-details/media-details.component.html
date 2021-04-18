@@ -1,0 +1,19 @@
+<p>Media-details</p>
+
+    <div *ngFor="let m of moviesdetails">
+      <div class="row">
+        <div class="col-3">    
+            <div><img src={{m.poster}} width="150" height="200"></div>
+       </div>
+        <div class="col-6 mb-2">
+        <div>Movie Id: {{m.id}}</div>
+          <div>Movie Title: {{m.title}}</div>
+            <div>Movie Overview: {{m.overview}}</div>
+          <div>Movie Releasedate: {{m.release_date | date}}</div>
+          <div>Movie Genres: {{m.genres}}</div>
+        </div>
+      
+    </div>
+    <div class="spacing"></div>
+  </div>
+  <br/>
